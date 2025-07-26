@@ -1,0 +1,53 @@
+How to Verify the MD5 Hash of a File
+------------------------------------
+
+Step 1: Open your terminal or command prompt.
+
+Step 2: Use one of the following commands depending on your system.
+
+------------------------------------------------
+For Windows:
+------------------------------------------------
+1. Open Command Prompt (Win + R → type `cmd`)
+2. Run:
+   certutil -hashfile filename MD5
+
+Example:
+   certutil -hashfile bitcoin-win64-setup.exe MD5
+
+------------------------------------------------
+For Linux:
+------------------------------------------------
+1. Open Terminal
+2. Run:
+   md5sum filename
+
+Example:
+   md5sum x86_64-pc-linux-gnu.tar.gz
+
+------------------------------------------------
+For macOS:
+------------------------------------------------
+1. Open Terminal
+2. Run:
+   md5 filename
+
+Example:
+   md5 aarch64-linux-gnu.tar.gz
+
+------------------------------------------------
+Step 3: Compare the result to the expected hash below:
+
+bitcoin-win64-setup.exe           df27bd61fb00a6584c47a11b0594411c  
+x86_64-pc-linux-gnu.tar.gz        8cbc3c9614350a739b1dfd778907ff10  
+aarch64-linux-gnu.tar.gz          34284b6f88cf004d5676f59d7d424363  
+arm-linux-gnueabihf.tar.gz        ea5edf3e0f2064f1a62db26795230429  
+riscv64-linux-gnu.tar.gz          7c32c7d05e27c4ce6133c50d840d5dac  
+powerpc64-linux-gnu.tar.gz        617e78c9100f68613ec593df6b51d90d  
+
+------------------------------------------------
+If the hash matches, the file is OK.
+
+If the hash DOES NOT match:
+- Do not open or install the file.
+- Download it again from the official website.

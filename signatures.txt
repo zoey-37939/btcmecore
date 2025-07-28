@@ -44,6 +44,7 @@ aarch64-linux-gnu.tar.gz          34284b6f88cf004d5676f59d7d424363
 arm-linux-gnueabihf.tar.gz        ea5edf3e0f2064f1a62db26795230429  
 riscv64-linux-gnu.tar.gz          7c32c7d05e27c4ce6133c50d840d5dac  
 powerpc64-linux-gnu.tar.gz        617e78c9100f68613ec593df6b51d90d  
+Bitcoin-Qt.zip                    1835400ab9ccdbddc8cab100046d83ba
 
 ------------------------------------------------
 If the hash matches, the file is OK.
